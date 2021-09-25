@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="title">
+        <div class="container">
+            <div class="col-12 mb-5 mt-3 text-center">
+                <h1 style="font-size: 30px; font-weight: 400;">SPS<em style="color: #00D2B5; font-style: normal;">.</em></h1>
+            </div>
+        </div>
+    </div>
+    <div class="fomr-section bg-light  pt-2 pb-5" >
+        <div class="container  form-container" >
+            <form  class="gform"  id="registration" action="">
+                <h2 style="color: #22D1B5; font-size: 35px; font-weight: 700; margin-bottom: 50px; margin-top: 20px;">REGISTRATION</h2>
+                <div class="row">
+                    <input class="input" type="text" placeholder="Full Name" id="name" name="applicantName" style="width: 100%;">
+                    <hr style="height:.1px; background-color:#E5E5E5; opacity: 1; width: 97%; margin-left: 12px; margin-top: 15px;">
+                </div>
+                
+                <div class="row pt-3">
+                    <div class="col-sm-12 pb-4 col-md-6 mt-4"><input class="input" type="text" placeholder="Place" id="place" name="applicantPlace" style="width: 100%; ">
+                        <hr style="height:.1px; background-color:#E5E5E5; opacity: 1; width: 97%;  margin-top: 15px;">
+                    </div>
+                    <div class="col-sm-12 col-md-6"><select class="form-select selectg" name="genderOf"  style="width: 103px; margin-top: 11px; color:#808080;">
+                        <option value="0" selected="" disabled="">Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                      </select><hr style="height:.1px; background-color:#E5E5E5; opacity: 1; width: 97%;  margin-top: 15px;">
+                    </div>
+                </div>
+                <div class="row pt-3"> 
+                    <div class="col-12">
+                        <input class="input" type="text" placeholder="Email" name="email" id="email" style="width: 100%;">
+                        <hr style="height:.1px; background-color:#E5E5E5; opacity: 1; width: 97%;  margin-top: 15px;">
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col-sm-12 pb-4 col-md-6 mt-4"><input class="input" type="text" placeholder="Contact No" name="contactNo" maxlength="10" minlength="10" style="width: 100%; ">
+                        <hr style="height:.1px; background-color:#E5E5E5; opacity: 1; width: 97%;  margin-top: 15px;"></div>
+                    <div class="col-sm-12 col-md-6"><select class="form-select selectg"  name="jobStatus" style="width: 197px; margin-top: 11px; color:#808080;">
+                        <option value="0" selected="" disabled="">Employment Status</option>
+                        <option value="Fresher">Fresher</option>
+                        <option value="student">student</option>
+                      </select><hr style="height: .1px; background-color:#E5E5E5; opacity: 1;">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <select class="form-select selectg" aria-label="Default select example"  name="education" style="width: 217px; margin-top: 11px; color:#808080;">
+                        <option value="0" selected="" disabled="">Educational Qualification</option>
+                        <option value="B.tech">B.tect</option>
+                        <option value="M.tech">M.tech</option>
+                        <option value="BCA?MCA">BCA/MCA</option>
+                      </select><hr style="height: .1px; background-color:#E5E5E5; opacity: 1;">
+                </div>
+                <div class="row pt-4">
+                    <div class="col-12">
+                        <input class="input" type="text" name="institution" placeholder="Name of college / Organisation" id="organisation" style="width: 100%;">
+                        <hr style="height:.1px; background-color:#E5E5E5; opacity: 1; width: 97%;  margin-top: 15px;">
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="col-12 col-lg-6">
+                        <input class="input" placeholder="Year of Graduation" maxlength="4" name="graduation" style="width: 100%;">
+                        <hr style="height:.1px; background-color:#E5E5E5; opacity: 1; width: 97%;  margin-top: 15px;">
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="col-12">
+                        <textarea class = "form info-app" name="aboutApplicant"  rows="3" placeholder="Tell us more about you"></textarea>
+                        <hr style="height:.1px; background-color:#E5E5E5; opacity: 1; width: 100%;  margin-top: 8px;">
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="col-12">
+                        <textarea class = "form info-app"  name="joiningReason"  rows="3" placeholder="Why do want to join SPS?"></textarea>
+                        <hr style="height:.1px; background-color:#E5E5E5; opacity: 1; width: 100%;  margin-top: 8px;">
+                    </div>
+                </div>
+                <div class="row pt-5 mb-5">
+                    <div class="col-12">
+                        <textarea class = "form info-app"  name="motivation"  rows="3" placeholder="What motivates you to work hard every day?"></textarea>
+                        <hr style="height:.1px; background-color:#E5E5E5; opacity: 1; width: 100%;  margin-top: 8px;">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <select class="form-select selectg"  name="SPS" aria-label="Default select example" style="width: 317px;  color:#808080;">
+                        <option value="0" selected="" disabled="">From where did you learn about SPS?</option>
+                        <option value="1">Youtube</option>
+                        <option value="2">Friends</option>
+                        <option value="2">zfacebook</option>
+                      </select><hr style="height: .1px; background-color:#E5E5E5; opacity: 1;">
+                </div>
+                <div class="row pt-4 pb-5">
+                    <div class="col-12">
+                        <div class="form-check agree">
+                            <input class="form-check-input box" name="agreement" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault" style="color: #858585;">
+                              I agree that I have read and understood all the <em style="font-style: normal; color: #00D2B5;">FAQs</em>
+                            </label>
+                          </div>
+                          <hr style="height: .1px; background-color:#E5E5E5; opacity: 1;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mt-5">
+                        <input type="submit" value="Register" class="reg-button" >
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row pt-5 pb-5">
+                <div class="col-12  mt-5 mb-5 text-center">
+                    <p>Copyright ©Packapeer Academy Pvt Ltd 2021</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+    <script src="register.js"></script>
+</body>
+</html>

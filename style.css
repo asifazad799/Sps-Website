@@ -9,8 +9,8 @@ h1{
     font-size: 40px;
     font-weight: 900;
 }
-a{
-    text-decoration: none;
+.stitle:hover{
+  text-decoration: none;
 }
 .container{
     padding-left: 15px;
@@ -494,4 +494,71 @@ form.chat .out, form.chat .in {
 .f-icon:hover{
   color: #008673;
   cursor: pointer;
+}
+/* from */
+.gform{
+  padding: 40px;
+  border-radius: 15px;
+}
+.form-container{
+  background-color: white; 
+  margin-top: 30px;
+  border-radius: 15px;
+  width: 80%;
+}
+input{
+  width: 100%;
+  border: none;
+  /* padding:0px 0px 13px 0px;
+  border-bottom: 1px solid #E5E5E5; */
+  font-family: montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  outline: none;
+}
+input::placeholder{
+  color: #808080;
+}
+.selectg select{
+  color: #CCCCCC;
+  outline: none;
+}
+.selectg{
+  border: none;
+  color: #E5E5E5; 
+  padding-left: 0px;
+}
+
+.info-app{
+  width: 100%;
+  border: none;
+}
+.info-app{
+  font-family: montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  outline: none;
+}
+.reg-button{
+  width: 100%;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #22D1B5;
+  color: white;
+}
+.reg-button:focus .box{
+  top: 14;
+}
+.error{
+  color: red;
+  /* position: relative; */
+  padding-top: 7px;
+}
+textarea::placeholder{
+  margin-left: 0px;
+}
+/* video */
+.hidden{
+  display: none;
 }
