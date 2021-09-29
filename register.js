@@ -1,7 +1,9 @@
-
+$.validator.addMethod("Email", function (value, element) {
+    return this.optional(element) || value == value.match(/\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b/i);},'Enter a valid email'
+    );
 $.validator.addMethod("customName", function(value, element) { 
     return this.optional( element ) || /^([a-zA-Z])+([a-zA-Z])+$/.test( value ); 
-  },);
+  },'Enter a valid input');
 $("#registration").validate({
             rules:{
                 applicantName:{
@@ -21,7 +23,7 @@ $("#registration").validate({
                 },
                 email: {
                     required: true,
-                    email: true
+                    Email: true
                 },
                 jobStatus:{
                     required: true
@@ -53,54 +55,16 @@ $("#registration").validate({
                 }
             },
             messages:{
-                applicantName:{
-                    required: 'Field is requred',
-                    customName:'Enter a valid input'
-                },
-                applicantPlace: {
-                    required: 'Field is requred',
-                    customName:'Enter a valid input'
-                },
-                genderOf: {
-                    required: 'Field is requred'
-                },
+                // applicantName:{
+                //     customName:'Enter a valid input'
+                // },
+                // applicantPlace: {
+                //     customName:'Enter a valid input'
+                // },
                 contactNo : {
-                    required: 'Field is requred',
                     digits: 'enter a valid contact number',
                 },
-                email: {
-                    required: 'Field is requried',
-                    email: 'Enter a valid email'
-                },
-                jobStatus:{
-                    required: 'Field is required'
-                },
-                education: {
-                    required: 'Field is required'
-                },
-                institution: {
-                    required: 'Field is required'
-                },
-                graduation:  {
-                    required: 'Field is required',
-                    digits: 'enter a valid input'
-                },
-                aboutApplicant:{
-                    required: 'Field is required'
-                },
-                joiningReason: {
-                    required: 'Field is required'
-                },
-                motivation:  {
-                    required: 'Field is required'
-                },
-                SPS: {
-                    required: 'Field is required'
-                },
-                agreement: {
-                    required: 'Field is required'
-                }
-            },
+           },
             errorPlacement: function(error,element){
                 if(element.is(":checkbox")){
                     error.appendTo(element.parents(".agree"));
@@ -123,8 +87,7 @@ $("#registration").validate({
                     }
                 })
             }
-
-        })
+})
 
 
 

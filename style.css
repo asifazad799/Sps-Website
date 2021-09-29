@@ -472,10 +472,28 @@ form.chat .out, form.chat .in {
 .out:hover p{
   color: #000;
 }
-.contactsin{
+/* .contactsin{
   padding-top: 130px;
   padding-left: 130px;
   
+} */
+.to-top-button{
+  display: none;
+  padding: 15px;
+  border: none;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: #00D2B5;
+  color: white;
+  position: fixed;
+  cursor: pointer;
+  outline: none;
+  right: 30px;
+  bottom: 20px;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color, color;
+  z-index: 1000;
 }
 .call{
   

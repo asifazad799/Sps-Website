@@ -68,3 +68,17 @@ const videoplacer5 = () =>{
 };
 
 spsimg5.addEventListener("click",videoplacer5);
+
+const topButton = document.querySelector(".to-top-button");
+window.addEventListener("scroll", scrollFunction);
+function scrollFunction(){
+    if(window.pageYOffset > 300) {
+        topButton.style.display = "block";
+    }else{
+        topButton.style.display = "none";
+    }
+}
+topButton.addEventListener("click", backToTop);
+ function backToTop(){
+     window.scrollTo(0, 0);
+ }
